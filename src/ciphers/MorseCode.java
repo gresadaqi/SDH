@@ -46,4 +46,19 @@ public class MorseCode {
 
         morseCodeMap.put(' ', "/");
     }
+
+    public static String enkriptimiNeMorse(String input) {
+        StringBuilder morseBuilder = new StringBuilder();
+        input = input.toUpperCase();
+
+        for (char c : input.toCharArray()) {
+            if (morseCodeMap.containsKey(c)) {
+                morseBuilder.append(morseCodeMap.get(c)).append(" ");
+            } else {
+                morseBuilder.append("? ");
+            }
+        }
+
+        return morseBuilder.toString().trim();
+    }
 }
