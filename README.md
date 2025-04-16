@@ -46,5 +46,23 @@ Shkronjat e tekstit vendosen një nga një në rreshta sipas një modeli zigzag 
 
 Pasi të gjitha shkronjat janë vendosur, lexohen rresht për rresht dhe bashkohen në një varg të vetëm për të formuar mesazhin e koduar.
 
+### Morse Code Cipher - Java implemenation
+
+Ky projekt ofron një implementim të thjeshtë në Java për enkriptimin e tekstit në Kodin Morse. 
+Është një shembull shumë i mirë për të kuptuar si funksionojnë hartat (maps) në Java dhe si mund të realizohet një teknikë e thjeshtë enkriptimi.
+
+**Pershkrim:**
+
+**Pershrkimi i algorimit te Kodit te Morse**
+
+Enkripton shkronjat (A-Z), numrat (0-9) dhe hapësirat (' ') në Kodin Morse.
+Karakteret e panjohura zëvendësohen me simbolin ?.
+Lehtësisht i zgjerueshëm për dekriptim dhe ndërfaqe grafike.
+
+
+
+
+
+
 
 

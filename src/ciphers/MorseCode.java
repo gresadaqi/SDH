@@ -44,6 +44,6 @@ public class MorseCode {
         morseCodeMap.put('8', "---..");
         morseCodeMap.put('9', "----.");
 
-        morseCodeMap.put(' ', "/");  
+        morseCodeMap.put(' ', "/");
     }
 }
