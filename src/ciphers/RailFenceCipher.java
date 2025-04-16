@@ -27,5 +27,22 @@ public class RailFenceCipher {
                 // Lëviz në rail-in tjetër
                 currentRail += goingDown ? 1 : -1;
             }
+
+            StringBuilder result = new StringBuilder();
+            for (StringBuilder sb : rail) {
+                result.append(sb);
+            }
+
+            return result.toString();
+        }
+
+    public static void main(String[] args) {
+        String message = "HELLO WORLD";
+        int numRails = 3;
+
+        String encrypted = encrypt(message.replaceAll(" ", ""), numRails);
+        System.out.println("Encrypted: " + encrypted); // Output: HORELLOWLD
+    }
+}
             
 
