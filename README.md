@@ -22,3 +22,28 @@ Teksti i koduar (Homophonic): 11 09 20 22 30
 ```
 
 *Vlera e koduar ndryshon në çdo ekzekutim për shkak të zgjedhjes rastësore të simboleve nga lista.*
+
+
+
+
+###  Rail Fence Cipher – Java Implementation
+
+Ky projekt përmban një implementim të Rail Fence Cipher, një algoritëm klasik i enkriptimit 
+që përdor transpozicion për të koduar tekstin. Programi është ndërtuar në Java dhe mund 
+të ekzekutohet përmes IntelliJ IDEA.
+
+
+**Pershkrim:**
+
+**Përshkrimi i algoritmit Rail Fence Cipher**
+Rail Fence Cipher është një metodë e thjeshtë për të koduar një mesazh duke ndryshuar renditjen e shkronjave pa i zëvendësuar ato. Kjo teknikë bazohet në një model zigzag për të shpërndarë shkronjat në disa rreshta, të cilët përfaqësojnë (rails), dhe më pas lexon ato rreshta në një rend të caktuar për të krijuar mesazhin e koduar.
+
+🔸Si funksionon kodimi (encryptimi):
+Marrim tekstin që duam ta kodojmë dhe zgjedhim një numër rreshtash (key), që tregon sa "hekurudha" do të kemi.
+
+Shkronjat e tekstit vendosen një nga një në rreshta sipas një modeli zigzag (fillon nga lart, zbret poshtë, pastaj ngjitet lart, dhe kështu me radhë).
+
+Pasi të gjitha shkronjat janë vendosur, lexohen rresht për rresht dhe bashkohen në një varg të vetëm për të formuar mesazhin e koduar.
+
+
+
