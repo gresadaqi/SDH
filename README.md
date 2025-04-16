@@ -36,6 +36,7 @@ të ekzekutohet përmes IntelliJ IDEA.
 **Pershkrim:**
 
 **Përshkrimi i algoritmit Rail Fence Cipher**
+
 Rail Fence Cipher është një metodë e thjeshtë për të koduar një mesazh duke ndryshuar renditjen e shkronjave pa i zëvendësuar ato. Kjo teknikë bazohet në një model zigzag për të shpërndarë shkronjat në disa rreshta, të cilët përfaqësojnë (rails), dhe më pas lexon ato rreshta në një rend të caktuar për të krijuar mesazhin e koduar.
 
 🔸Si funksionon kodimi (encryptimi):
