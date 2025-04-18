@@ -96,6 +96,16 @@ Enkripton shkronjat (A-Z), numrat (0-9) dhe hapësirat (' ') në Kodin Morse.
 Karakteret e panjohura zëvendësohen me simbolin ?.
 Lehtësisht i zgjerueshëm për dekriptim dhe ndërfaqe grafike.
 
+Shembull i Ekzekutimit
+Input:
+Shkruaj tekstin që dëshiron ta enkriptosh në Morse Code:
+Hello World 123
+
+Output:
+Teksti i enkriptuar në Morse Code:
+.... . .-.. .-.. --- / .-- --- .-. .-.. -.. / .---- ..--- ...--
+
+
 
 
 
