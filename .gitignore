@@ -6,6 +6,12 @@
 /out/
 *.class
 
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
 # OS-specific files
 .DS_Store
 Thumbs.db
