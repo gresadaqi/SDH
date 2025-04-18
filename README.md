@@ -106,9 +106,6 @@ Teksti i enkriptuar në Morse Code:
 .... . .-.. .-.. --- / .-- --- .-. .-.. -.. / .---- ..--- ...--
 
 
-
-
-
 ## 🧹 Git Ignore
 
 Projekti përfshin një `.gitignore` të konfiguruar për projekte Java dhe IntelliJ IDEA, duke shmangur ngarkimin e fajllave `.class`, `.iml`, `out/`, dhe `.idea/`.
