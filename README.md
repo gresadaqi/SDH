@@ -105,6 +105,16 @@ Output:
 Teksti i enkriptuar në Morse Code:
 .... . .-.. .-.. --- / .-- --- .-. .-.. -.. / .---- ..--- ...--
 
+//Dekriptimi
+
+Input nga përdoruesi:
+-- --- .-. ... . -.-. --- -.. .
+
+Teksti i dekriptuar nga Morse Code:
+MORSECODE 
+
+
+
 
 ## 🧹 Git Ignore
 
