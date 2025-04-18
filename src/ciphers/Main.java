@@ -34,6 +34,22 @@ public class Main {
 
         //MORSECODE CIPHER
 
+        Scanner scanner = new Scanner(System.in);
+
+        // Enkriptim
+        System.out.print("Shkruaj tekstin për enkriptim në Morse Code: ");
+        String tekstInput = scanner.nextLine();
+        String morse = MorseCode.enkriptimiNeMorse(tekstInput);
+        System.out.println("Teksti në Morse Code: " + morse);
+
+        // Dekriptim
+        System.out.print("Shkruaj kodin Morse për dekriptim: ");
+        String morseInput = scanner.nextLine();
+        String dekoduar = MorseCode.morseNeTekst(morseInput);
+        System.out.println("Teksti i dekriptuar: " + dekoduar);
+
+        scanner.close();
+
 
     }
 }
