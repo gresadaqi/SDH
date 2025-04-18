@@ -5,11 +5,21 @@ public class Main {
         //HOMOPHONIC CIPHER
         HomophonicCipher cipher = new HomophonicCipher();
 
-        String input = "HELLO";
+        // Teksti origjinal për enkriptim
+        String input = "HELLO WORLD";
+
+        // Enkriptimi
         String encoded = cipher.encode(input);
 
-        System.out.println("Teksti origjinal: " + input);
-        System.out.println("Teksti i koduar (Homophonic): " + encoded);
+        // Dekriptimi
+        String decoded = cipher.decode(encoded);
+
+        // Printimi i rezultateve
+        System.out.println("Teksti origjinal  : " + input);
+        System.out.println("Teksti i koduar   : " + encoded);
+        System.out.println("Teksti i dekriptuar: " + decoded);
+
+
 
         //RAILFENCE CIPHER
         String message = "CYBERSECURITY";
