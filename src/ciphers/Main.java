@@ -1,5 +1,7 @@
 package ciphers;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         //HOMOPHONIC CIPHER
@@ -31,5 +33,7 @@ public class Main {
         System.out.println("Mesazhi i enkriptuar: " + encrypted);
 
         //MORSECODE CIPHER
+
+
     }
 }

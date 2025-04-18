@@ -46,6 +46,7 @@ public class MorseCode {
 
         morseCodeMap.put(' ', "/");
     }
+    //Enkriptimi i morseCode-it
 
     public static String enkriptimiNeMorse(String input) {
         StringBuilder morseBuilder = new StringBuilder();
@@ -61,4 +62,29 @@ public class MorseCode {
 
         return morseBuilder.toString().trim();
     }
+    // Dekriptimi i morseCode-it
+
+    public static String morseNeTekst(String morseInput) {
+
+        Map<String, Character> reverseMap = new HashMap<>();
+        morseCodeMap.forEach((k, v) -> reverseMap.put(v, k));
+
+        // Ndahet fjalia sipas hapësirave (karakteret) dhe '/' (fjalët)
+        String[] kode = morseInput.trim().split(" ");
+        StringBuilder rezultat = new StringBuilder();
+
+        for (String kod : kode) {
+            if (kod.equals("/")) {
+                rezultat.append(" ");
+            } else {
+                rezultat.append(reverseMap.getOrDefault(kod, '?'));
+            }
+        }
+
+        return rezultat.toString();
+    }
+
 }
+
+
+
