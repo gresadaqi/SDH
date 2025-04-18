@@ -15,7 +15,7 @@ public class HomophonicCipher {
         substitutionMap.put('H', Arrays.asList("11", "13"));
         substitutionMap.put('L', Arrays.asList("20", "22"));
         substitutionMap.put('O', Arrays.asList("30", "32"));
-        // Shto më shumë sipas nevojës
+
     }
 
     public String encode(String message) {

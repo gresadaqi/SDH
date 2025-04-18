@@ -2,6 +2,7 @@ package ciphers;
 
 public class Main {
     public static void main(String[] args) {
+        //HOMOPHONIC CIPHER
         HomophonicCipher cipher = new HomophonicCipher();
 
         String input = "HELLO";
@@ -10,6 +11,7 @@ public class Main {
         System.out.println("Teksti origjinal: " + input);
         System.out.println("Teksti i koduar (Homophonic): " + encoded);
 
+        //RAILFENCE CIPHER
         String message = "CYBERSECURITY";
         int numRails = 3;
 
@@ -17,5 +19,7 @@ public class Main {
 
         System.out.println("Mesazhi origjinal: " + message);
         System.out.println("Mesazhi i enkriptuar: " + encrypted);
+
+        //MORSECODE CIPHER
     }
 }
