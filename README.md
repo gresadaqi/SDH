@@ -139,22 +139,25 @@ Lehtësisht i zgjerueshëm për dekriptim dhe ndërfaqe grafike.
 Input:
 Shkruaj tekstin që dëshiron ta enkriptosh në Morse Code:
 
-Hello World 123
+<span style="color:cyan">Hello World 123</span>
+
 
 Output:
 Teksti i enkriptuar në Morse Code:
 
-.... . .-.. .-.. --- / .-- --- .-. .-.. -.. / .---- ..--- ...--
+<span style="color:cyan">.... . .-.. .-.. --- / .-- --- .-. .-.. -.. / .---- ..--- ...--</span>
+
 
 <u>***Dekriptimi***</u>
 
 Input nga përdoruesi:
 
--- --- .-. ... . -.-. --- -.. .
+<span style="color:cyan">-- --- .-. ... . -.-. --- -.. .</span>
+
 
 Teksti i dekriptuar nga Morse Code:
 
-MORSECODE 
+<span style="color:cyan">MORSECODE</span> 
 
 ---
 
