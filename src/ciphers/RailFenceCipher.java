@@ -24,7 +24,7 @@ public class RailFenceCipher {
                     goingDown = false;
                 }
 
-                
+
                 currentRail += goingDown ? 1 : -1;
             }
 
