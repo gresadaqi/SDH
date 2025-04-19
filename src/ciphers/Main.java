@@ -32,13 +32,14 @@ public class Main {
 
         scanner.nextLine();
 
-        //EDnkriptim
+        //Enkriptim
         String encryptedText = RailFenceCipher.encrypt(text, rails);
         System.out.println("Teksti i enkriptuar: " + encryptedText);
 
         //Dekriptim
         String decryptedText = RailFenceCipher.decrypt(text, rails);
         System.out.println("Teksti i dekriptuar: " + decryptedText);
+
 
         //MORSECODE CIPHER
         // Enkriptim

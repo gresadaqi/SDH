@@ -19,12 +19,12 @@ Për të ekzekutuar programin në mënyrë të saktë, ndiq këto hapa:
 
 ---
 
-### Homophonic Substitution Cipher
+## Homophonic Substitution Cipher
 
 ### Përshkrim:
 Ky algoritëm përdor një hartë zëvendësimi ku secila shkronjë mund të përfaqësohet me disa kode numerike. Në kohën e kodimit, një nga këto kode zgjidhet rastësisht për secilën shkronjë, duke rritur sigurinë dhe duke shmangur analizën e frekuencës.
 
-## Si funksionon Homophonic Substitution Cipher?
+### Si funksionon Homophonic Substitution Cipher?
 
 Homophonic Substitution Cipher është një algoritëm enkriptimi ku secila shkronjë mund të përfaqësohet nga më shumë se një kod numerik i paracaktuar. Qëllimi është të rritet siguria duke bërë më të vështirë analizën e frekuencës.
 
@@ -63,58 +63,100 @@ Homophonic Substitution Cipher është një algoritëm enkriptimi ku secila shkr
 - Në Homophonic, një shkronjë ka shumë kode → shpërndarja është më e rastësishme.
 - Vështirësohet analizimi i frekuencës nga sulmuesit.
 
-###  Rail Fence Cipher – Java Implementation
+---
+
+##  Rail Fence Cipher 
 
 Ky projekt përmban një implementim të Rail Fence Cipher, një algoritëm klasik i enkriptimit 
 që përdor transpozicion për të koduar tekstin. Programi është ndërtuar në Java dhe mund 
 të ekzekutohet përmes IntelliJ IDEA.
 
 
-**Pershkrim:**
 
-**Përshkrimi i algoritmit Rail Fence Cipher**
+
+### Përshkrimi i algoritmit Rail Fence Cipher
 
 Rail Fence Cipher është një metodë e thjeshtë për të koduar një mesazh duke ndryshuar renditjen e shkronjave pa i zëvendësuar ato. Kjo teknikë bazohet në një model zigzag për të shpërndarë shkronjat në disa rreshta, të cilët përfaqësojnë (rails), dhe më pas lexon ato rreshta në një rend të caktuar për të krijuar mesazhin e koduar.
 
-🔸Si funksionon kodimi (encryptimi):
+### Si funksionon enkriptimi:
+
 Marrim tekstin që duam ta kodojmë dhe zgjedhim një numër rreshtash (key), që tregon sa "hekurudha" do të kemi.
 
 Shkronjat e tekstit vendosen një nga një në rreshta sipas një modeli zigzag (fillon nga lart, zbret poshtë, pastaj ngjitet lart, dhe kështu me radhë).
 
 Pasi të gjitha shkronjat janë vendosur, lexohen rresht për rresht dhe bashkohen në një varg të vetëm për të formuar mesazhin e koduar.
 
-### Morse Code Cipher - Java implemenation
+### Shembull: Enkriptim dhe Dekriptim me Rail Fence Cipher
+Le të marrim këtë shembull për të kuptuar më mirë funksionimin e algoritmit.
+
+Teksti origjinal: <span style="color:cyan">HELLO WORLD</span>
+
+Numri i rreshtave (key): 3
+
+<u>***Enkriptimi***</u>
+
+Në model zigzag me 3 rreshta, shkronjat vendosen kështu:
+
+```
+H . . . O . . . R . .
+. E . L . W . L . D .
+. . L . . . O . . . .
+```
+Lexojmë rresht për rresht:
+
+```
+Rreshti 1: H O R  
+Rreshti 2: E L W L D  
+Rreshti 3: L O  
+```
+Mesazhi i enkriptuar: <span style="color:cyan">HORELWLDLO </span>
+
+<u>***Dekriptimi***</u>
+
+Nga teksti i koduar HORELWLDLO dhe duke ditur çelësin 3, mund të rikrijojmë zigzagun për të vendosur shkronjat në pozicionin e duhur dhe ta rikthejmë tekstin origjinal:
+
+Teksti i dekriptuar: <span style="color:orange">HELLO WORLD  </span>
+
+---
+
+## Morse Code Cipher 
 
 Ky projekt ofron një implementim të thjeshtë në Java për enkriptimin e tekstit në Kodin Morse. 
 Është një shembull shumë i mirë për të kuptuar si funksionojnë hartat (maps) në Java dhe si mund të realizohet një teknikë e thjeshtë enkriptimi.
 
-**Pershkrim:**
 
-**Pershrkimi i algorimit te Kodit te Morse**
+
+### Pershkrimi i algorimit te Kodit te Morse
 
 Enkripton shkronjat (A-Z), numrat (0-9) dhe hapësirat (' ') në Kodin Morse.
 Karakteret e panjohura zëvendësohen me simbolin ?.
 Lehtësisht i zgjerueshëm për dekriptim dhe ndërfaqe grafike.
 
-Shembull i Ekzekutimit
+### Shembull i Ekzekutimit:
+
+<u>***Enkriptimi***</u>
+
 Input:
 Shkruaj tekstin që dëshiron ta enkriptosh në Morse Code:
+
 Hello World 123
 
 Output:
 Teksti i enkriptuar në Morse Code:
+
 .... . .-.. .-.. --- / .-- --- .-. .-.. -.. / .---- ..--- ...--
 
-//Dekriptimi
+<u>***Dekriptimi***</u>
 
 Input nga përdoruesi:
+
 -- --- .-. ... . -.-. --- -.. .
 
 Teksti i dekriptuar nga Morse Code:
+
 MORSECODE 
 
-
-
+---
 
 ## 🧹 Git Ignore
 
