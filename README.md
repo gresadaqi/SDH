@@ -1,30 +1,67 @@
-# SDH
+# Projekt Enkriptimi në Java – SDH
+
+Ky projekt përmban implementimin e tre algoritmave klasikë të enkriptimit duke përdorur gjuhën Java:
+
+- Homophonic Substitution Cipher
+-  Rail Fence Cipher
+-  Morse Code Cipher
+
+---
+
+## Udhëzime për ekzekutim
+
+Për të ekzekutuar programin në mënyrë të saktë, ndiq këto hapa:
+
+1. Hap projektin në **IntelliJ IDEA**.
+2. Navigo te klasa `Main.java` që ndodhet në paketën `ciphers`.
+3. Kliko me të djathtën mbi `Main.java` dhe zgjidh `Run 'Main'`.
+4. Në terminalin poshtë do të shfaqen rezultatet e ekzekutimit për secilin algoritëm (tekst origjinal, i koduar dhe i dekriptuar).
+
+---
+
 ### Homophonic Substitution Cipher
 
-**Përshkrim:**
+### Përshkrim:
+Ky algoritëm përdor një hartë zëvendësimi ku secila shkronjë mund të përfaqësohet me disa kode numerike. Në kohën e kodimit, një nga këto kode zgjidhet rastësisht për secilën shkronjë, duke rritur sigurinë dhe duke shmangur analizën e frekuencës.
 
-Homophonic Substitution Cipher është një teknikë e kodimit ku secila shkronjë mund të zëvendësohet me një nga disa simbole të ndryshme të paracaktuara. Qëllimi i kësaj metode është të shmangë analizën e frekuencës, duke bërë që të njëjtën shkronjë ta përfaqësojmë me disa zëvendësime të mundshme, në mënyrë të rastësishme.
+## Si funksionon Homophonic Substitution Cipher?
 
-Kjo rrit sigurinë e enkriptimit, sidomos kur përdoret për tekste më të gjata, pasi frekuenca e shkronjave nuk është e drejtpërdrejtë.
+Homophonic Substitution Cipher është një algoritëm enkriptimi ku secila shkronjë mund të përfaqësohet nga më shumë se një kod numerik i paracaktuar. Qëllimi është të rritet siguria duke bërë më të vështirë analizën e frekuencës.
 
-**Udhëzime për ekzekutim:**
+### Hapat e funksionimit:
 
-1. Hap projektin në IntelliJ IDEA.
-2. Navigo te klasa `Main.java` e cila ndodhet brenda paketës `ciphers`.
-3. Ekzekuto programin duke e klikuar me të djathtën mbi fajllin dhe duke zgjedhur `Run 'Main'`.
-4. Rezultati do të shfaqet në terminalin poshtë, ku do të shihen teksti origjinal dhe teksti i koduar.
+1. **Krijimi i hartës së zëvendësimit:**
+    - Për çdo shkronjë (p.sh. `A`, `B`, `C`...), caktohet një listë me kode të ndryshme numerike.
+    - Shembull:
+      ```
+      A → ["12", "34"]
+      E → ["87", "09"]
+      L → ["20", "22"]
+      ```
 
-**Shembull rezultati:**
+2. **Enkriptimi (encode):**
+    - Teksti lexon çdo shkronjë dhe zëvendësohet me një kod të rastësishëm nga lista përkatëse.
+    - Për çdo enkriptim, mund të prodhohet rezultat i ndryshëm për të njëjtin tekst.
+    - Shembull:
+      ```
+      Teksti: HELLO
+      Rezultat: 11 87 22 20 32
+      ```
 
-```
-Teksti origjinal: HELLO
-Teksti i koduar (Homophonic): 11 09 20 22 30
-```
+3. **Dekriptimi (decode):**
+    - Krijohet një hartë e anasjelltë ku çdo kod lidhet me shkronjën përkatëse.
+    - Mesazhi i koduar ndahet me `split(" ")`, dhe rikthehet në tekst origjinal.
+    - Shembull:
+      ```
+      Kodi: 13 09 22 20 30
+      Teksti: HELLO
+      ```
 
-*Vlera e koduar ndryshon në çdo ekzekutim për shkak të zgjedhjes rastësore të simboleve nga lista.*
+### Pse është i sigurt?
 
-
-
+- Në cipher të thjeshtë, një shkronjë ka vetëm një zëvendësim (lehtë e dallueshme).
+- Në Homophonic, një shkronjë ka shumë kode → shpërndarja është më e rastësishme.
+- Vështirësohet analizimi i frekuencës nga sulmuesit.
 
 ###  Rail Fence Cipher – Java Implementation
 
@@ -59,9 +96,29 @@ Enkripton shkronjat (A-Z), numrat (0-9) dhe hapësirat (' ') në Kodin Morse.
 Karakteret e panjohura zëvendësohen me simbolin ?.
 Lehtësisht i zgjerueshëm për dekriptim dhe ndërfaqe grafike.
 
+Shembull i Ekzekutimit
+Input:
+Shkruaj tekstin që dëshiron ta enkriptosh në Morse Code:
+Hello World 123
+
+Output:
+Teksti i enkriptuar në Morse Code:
+.... . .-.. .-.. --- / .-- --- .-. .-.. -.. / .---- ..--- ...--
+
+//Dekriptimi
+
+Input nga përdoruesi:
+-- --- .-. ... . -.-. --- -.. .
+
+Teksti i dekriptuar nga Morse Code:
+MORSECODE 
 
 
 
+
+## 🧹 Git Ignore
+
+Projekti përfshin një `.gitignore` të konfiguruar për projekte Java dhe IntelliJ IDEA, duke shmangur ngarkimin e fajllave `.class`, `.iml`, `out/`, dhe `.idea/`.
 
 
 
