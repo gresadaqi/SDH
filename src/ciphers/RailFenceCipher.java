@@ -36,25 +36,26 @@ public class RailFenceCipher {
         return result.toString();
     }
 
-    public static String decrypt(String cipher,int rails){
-        if(rails<=1){
+    public static String decrypt(String cipher, int rails) {
+        if (rails <= 1) {
             return cipher;
         }
 
-        boolean[][] railMatrix=new boolean[rails][cipher.length()];
-        int currentRail=0;
-        boolean goingDown=true;
+        boolean[][] railMatrix = new boolean[rails][cipher.length()];
+        int currentRail = 0;
+        boolean goingDown = true;
 
-        for(int i=0; i< cipher.length(); i++){
-            railMatrix[currentRail][i]=true;
 
-            if(currentRail==0){
-                goingDown=true;
-            }else if (currentRail==rails -1){
-                goingDown=false;
+        for (int i = 0; i < cipher.length(); i++) {
+            railMatrix[currentRail][i] = true;
+
+            if (currentRail == 0) {
+                goingDown = true;
+            } else if (currentRail == rails - 1) {
+                goingDown = false;
             }
-            currentRail+=goingDown ? 1: -1 ;
 
+            currentRail += goingDown ? 1 : -1;
         }
 
 
@@ -68,7 +69,7 @@ public class RailFenceCipher {
             }
         }
 
-        
+
         StringBuilder result = new StringBuilder();
         currentRail = 0;
         goingDown = true;
@@ -85,13 +86,9 @@ public class RailFenceCipher {
         }
 
         return result.toString();
-
-
-
-
-
+    }
 
     }
-}
+
             
 

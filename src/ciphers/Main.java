@@ -21,21 +21,26 @@ public class Main {
         System.out.println("Teksti i koduar   : " + encoded);
         System.out.println("Teksti i dekriptuar: " + decoded);
 
-
-
-        //RAILFENCE CIPHER
-        String message = "CYBERSECURITY";
-        int numRails = 3;
-
-        String encrypted = RailFenceCipher.encrypt(message.replaceAll(" ", ""), numRails);
-
-        System.out.println("Mesazhi origjinal: " + message);
-        System.out.println("Mesazhi i enkriptuar: " + encrypted);
-
-        //MORSECODE CIPHER
-
         Scanner scanner = new Scanner(System.in);
 
+        //RAILFENCE CIPHER
+        System.out.print("Shkruaj tekstin per enkriptim ose dekriptim: ");
+        String text = scanner.nextLine();
+
+        System.out.print("Shkruani numrin e binarëve: ");
+        int rails = scanner.nextInt();
+
+        scanner.nextLine();
+
+        //EDnkriptim
+        String encryptedText = RailFenceCipher.encrypt(text, rails);
+        System.out.println("Teksti i enkriptuar: " + encryptedText);
+
+        //Dekriptim
+        String decryptedText = RailFenceCipher.decrypt(text, rails);
+        System.out.println("Teksti i dekriptuar: " + decryptedText);
+
+        //MORSECODE CIPHER
         // Enkriptim
         System.out.print("Shkruaj tekstin për enkriptim në Morse Code: ");
         String tekstInput = scanner.nextLine();
@@ -49,7 +54,5 @@ public class Main {
         System.out.println("Teksti i dekriptuar: " + dekoduar);
 
         scanner.close();
-
-
     }
 }
