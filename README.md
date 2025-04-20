@@ -7,20 +7,33 @@ Ky projekt përmban implementimin e tre algoritmave klasikë të enkriptimit duk
 -  Morse Code Cipher
 
 ---
-
-## Udhëzime për ekzekutim
+# Udhëzime për ekzekutim
 
 Për të ekzekutuar programin në mënyrë të saktë, ndiq këto hapa:
 
-1. Hap projektin në **IntelliJ IDEA**.
-2. Navigo te klasa `Main.java` që ndodhet në paketën `ciphers`.
-3. Kliko me të djathtën mbi `Main.java` dhe zgjidh `Run 'Main'`.
-4. Në terminalin poshtë do të shfaqen rezultatet e ekzekutimit për secilin algoritëm (tekst origjinal, i koduar dhe i dekriptuar).
+1. Hap projektin në GitHub Desktop dhe klono repository-n në kompjuterin tënd lokal përmes File > Clone repository duke futur linkun e GitHub-it:
+   https://github.com/gresadaqi/SDH-Grupi5.git
+
+2. Hap IntelliJ IDEA dhe nga menyja zgjidh File > Open, pastaj selekto folderin e projektit që ke klonuar.
+
+3. Navigo te klasa Main.java që ndodhet në paketën ciphers.
+
+4. Kliko me të djathtën mbi Main.java dhe zgjidh Run 'Main'.
+
+5. Në terminalin poshtë do të shfaqen rezultatet e ekzekutimit për secilin algoritëm (tekst origjinal, i koduar dhe i dekriptuar), të strukturuara në këtë formë:
+
+--------------------------------------
+[Emri i Algoritmit]
+Teksti Origjinal   : [teksti hyrës]
+Teksti i Koduar    : [teksti i enkriptuar]
+Teksti i Dekoduar  : [teksti i dekriptuar]
+--------------------------------------
 
 ---
 
-## Homophonic Substitution Cipher
+### Homophonic Substitution Cipher
 
+Ky projekt përmban një implementim të algoritmit Homophonic Substitution Cipher. Programi është ndërtuar në Java dhe demonstrohet përmes klasave të veçanta për enkriptim dhe dekriptim.
 ### Përshkrim:
 Ky algoritëm përdor një hartë zëvendësimi ku secila shkronjë mund të përfaqësohet me disa kode numerike. Në kohën e kodimit, një nga këto kode zgjidhet rastësisht për secilën shkronjë, duke rritur sigurinë dhe duke shmangur analizën e frekuencës.
 
@@ -161,10 +174,13 @@ Teksti i dekriptuar nga Morse Code:
 
 ---
 
-## 🧹 Git Ignore
+##  Git Ignore
 
-Projekti përfshin një `.gitignore` të konfiguruar për projekte Java dhe IntelliJ IDEA, duke shmangur ngarkimin e fajllave `.class`, `.iml`, `out/`, dhe `.idea/`.
-
+Projekti përfshin një `.gitignore` të konfiguruar për projekte Java dhe IntelliJ IDEA, duke shmangur ngarkimin e fajllave :
+*.class
+*.iml
+.idea/
+out/
 
 
 
